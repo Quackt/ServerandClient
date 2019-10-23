@@ -1,0 +1,6 @@
+C:\Users\ASUS\Desktop\university\大三上\C#\Project1\Project1\obj\Debug\Project1.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\university\大三上\C#\Project1\Project1\bin\Debug\Project1.exe.config
+C:\Users\ASUS\Desktop\university\大三上\C#\Project1\Project1\bin\Debug\Project1.exe
+C:\Users\ASUS\Desktop\university\大三上\C#\Project1\Project1\bin\Debug\Project1.pdb
+C:\Users\ASUS\Desktop\university\大三上\C#\Project1\Project1\obj\Debug\Project1.exe
+C:\Users\ASUS\Desktop\university\大三上\C#\Project1\Project1\obj\Debug\Project1.pdb

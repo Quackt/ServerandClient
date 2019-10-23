@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:tns="http://components.demo.example.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://components.demo.example.com/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" name="SoapWebService" targetNamespace="http://components.demo.example.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://components.demo.example.com/" location="http://localhost:8080/soap/idMatch?wsdl=SoapWebService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="SoapWebServiceSoapBinding" type="ns1:SoapWebService">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="isMatch">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="isMatch">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="isMatchResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SoapWebService">
+    <wsdl:port name="soaPortName" binding="tns:SoapWebServiceSoapBinding">
+      <soap12:address location="http://localhost:8080/soap/idMatch" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

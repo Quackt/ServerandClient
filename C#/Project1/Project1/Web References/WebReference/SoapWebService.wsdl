@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://components.demo.example.com/" name="SoapWebService" targetNamespace="http://components.demo.example.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://components.demo.example.com/" elementFormDefault="unqualified" targetNamespace="http://components.demo.example.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="isMatch" type="tns:isMatch" />
+      <xs:element name="isMatchResponse" type="tns:isMatchResponse" />
+      <xs:complexType name="isMatch">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="idNumber" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="isMatchResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="isMatch">
+    <wsdl:part name="parameters" element="ns1:isMatch" />
+  </wsdl:message>
+  <wsdl:message name="isMatchResponse">
+    <wsdl:part name="parameters" element="ns1:isMatchResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SoapWebService">
+    <wsdl:operation name="isMatch">
+      <wsdl:input name="isMatch" message="ns1:isMatch" />
+      <wsdl:output name="isMatchResponse" message="ns1:isMatchResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
